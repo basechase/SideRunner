@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UIElements;
+[RequireComponent(typeof(CollisionController))]
 
 public class PlayerController : MonoBehaviour
 {
@@ -18,6 +20,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float _jumpPower;
 
+    private CollisionController collisionSystem;
+
+
+    
 
 
    void Start()
@@ -44,7 +50,10 @@ public class PlayerController : MonoBehaviour
         fixedVelocity.x = Mathf.Clamp(fixedVelocity.x, -_maxSpeed, _maxSpeed);
         _rigidbody.velocity = fixedVelocity;
 
-
+        if(collisionSystem)
+        {
+            Console.WriteLine("Collided");
+        }
     }
 
     void Jump()
@@ -55,8 +64,9 @@ public class PlayerController : MonoBehaviour
 
     void Squat()
     {
-        
+    
     }
 
+    
 
 }
