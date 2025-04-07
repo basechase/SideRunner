@@ -40,7 +40,11 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        
+        Vector3 fixedVelocity = _rigidbody.velocity;
+        fixedVelocity.x = Mathf.Clamp(fixedVelocity.x, -_maxSpeed, _maxSpeed);
+        _rigidbody.velocity = fixedVelocity;
+
+
     }
 
     void Jump()

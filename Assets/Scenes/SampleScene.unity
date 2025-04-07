@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _acceleration: 0
-  _maxSpeed: 0
+  _maxSpeed: 3
   _jumpPower: 4
 --- !u!54 &417629776
 Rigidbody:
