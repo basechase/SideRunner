@@ -12,13 +12,13 @@ public class PlayerController : MonoBehaviour
     private float _moveInput;
 
     [SerializeField]
-    private float _acceleration;
+    private float _acceleration = 2;
 
     [SerializeField]
-    private float _maxSpeed;
+    private float _maxSpeed = 5;
 
     [SerializeField]
-    private float _jumpPower;
+    private float _jumpPower = 4.5f;
 
     private CollisionController collisionSystem;
 
@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
             UnSquat();
 
 
-        Vector3 force = new Vector3(1.5f, 0);
+        Vector3 force = new Vector3(10f, 0);
         _rigidbody.AddForce(force);
     }
 
@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
 
     void Squat()
     {
-        transform.localScale = new Vector3(1, .5f, 1);
+        transform.localScale = new Vector3(1, .2f, 1);
         isSquatin = true;
     }
 
