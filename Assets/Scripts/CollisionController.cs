@@ -26,7 +26,7 @@ public class CollisionController : MonoBehaviour
 
     void Start()
     {
-        startCollided = false;
+      
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -36,9 +36,9 @@ public class CollisionController : MonoBehaviour
         {
             if(collisionController.Contact())
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
 
-                startCollided = true;
+               
                 
             }
         }
