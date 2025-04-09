@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
     private CollisionController collisionSystem;
 
-
+    private bool isSquatin = false;
     
 
 
@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         _moveInput = Input.GetAxisRaw("PlayerVertical");
+
         if (Input.GetKeyDown(KeyCode.W))
             Jump();
 
@@ -62,6 +63,7 @@ public class PlayerController : MonoBehaviour
 
     void Jump()
     {
+        if(!isSquatin)
         _rigidbody.AddForce(Vector3.up * _jumpPower, ForceMode.Impulse);
 
     }
@@ -69,11 +71,13 @@ public class PlayerController : MonoBehaviour
     void Squat()
     {
         transform.localScale = new Vector3(1, .5f, 1);
+        isSquatin = true;
     }
 
     void UnSquat()
     {
         transform.localScale = new Vector3(1, 1, 1);
+        isSquatin = false;
     }
 
 }
