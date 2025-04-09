@@ -495,6 +495,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Capsule
       objectReference: {fileID: 0}
+    - target: {fileID: 2547888141240987589, guid: dc372c70047287d4e9a0b90f78d2d295, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3405919114488986476, guid: dc372c70047287d4e9a0b90f78d2d295, type: 3}
+      propertyPath: m_Constraints
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 4571146191388385993, guid: dc372c70047287d4e9a0b90f78d2d295, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.711

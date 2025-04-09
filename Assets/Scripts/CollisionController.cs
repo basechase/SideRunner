@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollisionController : MonoBehaviour
 {
@@ -35,8 +36,9 @@ public class CollisionController : MonoBehaviour
         {
             if(collisionController.Contact())
             {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
-            startCollided = true;
+                startCollided = true;
                 Debug.Log("colliding");
             }
         }

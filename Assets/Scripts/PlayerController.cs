@@ -39,6 +39,10 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.S))
             Squat();
+        if (Input.GetKeyUp(KeyCode.S))
+            UnSquat();
+
+
         Vector3 force = new Vector3(1.5f, 0);
         _rigidbody.AddForce(force);
     }
@@ -64,9 +68,12 @@ public class PlayerController : MonoBehaviour
 
     void Squat()
     {
-    
+        transform.localScale = new Vector3(1, .5f, 1);
     }
 
-    
+    void UnSquat()
+    {
+        transform.localScale = new Vector3(1, 1, 1);
+    }
 
 }
