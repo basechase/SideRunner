@@ -39,7 +39,7 @@ public class CollisionController : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
                 startCollided = true;
-                Debug.Log("colliding");
+                
             }
         }
     }

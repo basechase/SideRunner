@@ -3,7 +3,27 @@ guid: 92b5ea227667a2a4ab778f8df07f08f1
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AntenaMat
+    second: {fileID: 2100000, guid: 48bf55721e319cf4488ca6eee1bfda3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BB8_BodyMat
+    second: {fileID: 2100000, guid: 48bf55721e319cf4488ca6eee1bfda3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BB8_HeadMat
+    second: {fileID: 2100000, guid: c2cdb4eb6e346324799cbea6cebc9194, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hatch_DoorMat
+    second: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   materials:
     materialImportMode: 2
     materialName: 0

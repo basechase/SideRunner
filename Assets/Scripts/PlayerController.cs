@@ -55,10 +55,7 @@ public class PlayerController : MonoBehaviour
         fixedVelocity.x = Mathf.Clamp(fixedVelocity.x, -_maxSpeed, _maxSpeed);
         _rigidbody.velocity = fixedVelocity;
 
-        if(collisionSystem)
-        {
-            Console.WriteLine("Collided");
-        }
+        
     }
 
     void Jump()
